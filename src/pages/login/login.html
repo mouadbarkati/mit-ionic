@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color:purple">
+  <div>  
+      <ion-list inset class="list">
+          <ion-item class="item">
+              <ion-label  style="font-size:15px; color:bisque" stacked>UserName</ion-label>
+              <ion-input type="text" [(ngModel)]="todo.login" name="title" placeholder="Entre UserName"></ion-input>
+          </ion-item>
+          <ion-item class="item">
+                  <ion-label  style="font-size:15px; color: bisque" stacked>Password</ion-label>
+                  <ion-input type="Password" [(ngModel)]="todo.pwd" name="description" placeholder="Entre Password"></ion-input>
+              </ion-item>
+      </ion-list>
+  </div> 
+  <div text-center>
+      <button class="btn" ion-button color='secondary' round outline ion-button (click)="btnclick()" >Login</button>
+  </div>
+  </ion-content>
